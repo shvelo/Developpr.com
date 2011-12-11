@@ -1,0 +1,15 @@
+/* TEAM */
+ Developer: Nick Shvelidze
+ Site: http://
+ Twitter: @Shvelo96
+ Location: Tbilisi,Georgia
+
+							
+/* THANKS */
+ ZURB: http://zurb.com
+
+                
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Orbit, Reveal
+  Software: Eclipse, FileZilla
