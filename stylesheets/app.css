@@ -31,6 +31,21 @@ body>footer {
 	margin-top: -100px;
 }
 
+ul,li {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.navigation li, .navigation a {
+	float:left;	
+}
+
+.navigation a {
+	display: block;
+	padding: 0px 10px 0px 10px;
+	line-height: 100px;
+}
+
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
