@@ -1,6 +1,7 @@
+$('label[for="country"],#country').hide();
+$('#contact div').append('<label for="imhuman"> <input type="checkbox" id="imhuman" name="imhuman" style="display: none;"><span class="custom checkbox"></span>  I am human!</label>');
 /* Foundation v2.1.3 http://foundation.zurb.com */
-$(document).ready(function () {
-
+$(document).ready(function () {	
 	/* Use this js doc for all application specific JS */
 
 	/* TABS --------------------------------- */
@@ -70,10 +71,12 @@ $(document).ready(function () {
 			$('.nav-bar li .flyout').hide();
 		}
 	});
-	*/
-
-	/* DISABLED BUTTONS ------------- */
-	/* Gives elements with a class of 'disabled' a return: false; */
-
-	$('#featured').orbit();
+	*/		
+	var contact = $('#contact');
+	contact.submit(function(){
+		contact.fadeOut('slow');
+		$('h2#title').text('Message sent!');
+		$.post("contactme.php",contact.serialize());		
+		return false;
+	});
 });

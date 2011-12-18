@@ -16,45 +16,212 @@
 
 html,body {
 	height: 100%;
+	background: url('../images/pattern.jpg') #606060;
+	color: white;
+	font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: white;
+}
+
+a,a:hover {
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .wrapper {
-	min-height: 100%;	
+	min-height: 100%;
 }
 
 .wrapper>header {
 	padding-top: 10px;
 }
 
+.padder {
+	height: 220px;
+}
+
 body>footer {
-	height: 100px;
-	margin-top: -100px;
+	height: 220px;
+	margin-top: -220px;
+	background: #2d2d2d;
+	background: rgba(45,45,45,0.5);
+}
+
+footer .info aside {
+	padding-top: 10px;
+	font-size: 1.1em;
+	line-height: 1.1;	
+}
+
+footer h4 {
+	color: #bdff83;
+	margin-bottom: 0;
+}
+
+footer .info aside img {
+	float: left;
+	margin-right: 5px;	
+}
+
+footer .info .social {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.footer-nav {
+	padding-top: 10px;
+}
+
+.footer-nav li a {
+	display: block;
+	color: white;
+	font-size: 1.5em;
+	line-height: 2.5;
+	padding-left: 5px;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.footer-nav li a:hover {
+	background: white;
+	color: #2d2d2d;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 ul,li {
-	padding: 0px !important;
-	margin: 0px !important;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	color: white;
+}
+
+.navigation ul {
+	float: right;
 }
 
 .navigation li, .navigation a {
-	float:left;	
+	float:left;
+	color: white;
 }
 
 .navigation a {
 	display: block;
 	padding: 0px 10px 0px 10px;
 	line-height: 100px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.navigation a.active {
+	color: #96ff00;
+}
+
+.navigation a:hover {
+	color: #bdff83;
+}
+
+.twtr-hd {
+display:none;
+}
+.twtr-ft {
+display:none;
 }
 
 /* -----------------------------------------
-   Page Name 1
+   Home Page
 ----------------------------------------- */
 
+.featured table {
+	width: 100%;
+	background: transparent;
+	border: none;
+}
 
+.featured tr, .featured td {
+	background: transparent !important;		
+}
 
+.featured td {
+	width: 300px;
+	height: 300px;
+}
+
+.featured td div {	
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	opacity: 0;	
+	width: 300px;
+	height: 300px;
+	background: rgba(255,255,255,0.7);
+	position: absolute;
+	cursor: pointer;
+}
+
+.featured td:hover div {	
+	opacity: 1;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.featured td div h4 {
+	color: #66d800;
+	text-align: center;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
+
+.featured td div p {
+	padding: 10px;
+	padding-top: 0px;
+	margin: 0px;
+	font-size: 1.5em;		
+}
+
+.featured img {
+	cursor: pointer;
+}
+
+.about-me {
+	font-size: 1.5em;
+	line-height: 1.1;
+	text-align: center;
+	margin-bottom: 20px;	
+}
+
+.about-me a {
+	color: #a9ff5c;
+}
+
+.about-me a:hover {
+	color: #78ff00;
+}
 
 /* -----------------------------------------
-   Page Name 2
+   Contact
 ----------------------------------------- */
 
-
+ #contact input, #contact textarea {
+ 	width: 400px;
+ }
+ 
+ #contact .checkbox {
+ 	background: white;
+ 	border-radius: 2px;
+ }
+ 
+ #contact .checkbox.checked {
+ 	background: #96ff00;
+ }
